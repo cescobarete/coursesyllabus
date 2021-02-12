@@ -11,6 +11,8 @@
         <title>Course Syllabus</title>
     </head>
     <body>
+        <!--Allows css-->
+        <!--creates grid and specifications with grid item specifications-->
         <style>
             body {
                 border: 5px solid black;
@@ -19,17 +21,31 @@
             }
 
             h2 {
-                background-color: black;
-                color: white;
-                text-shadow: 2px 2px rgb(238, 16, 16);
-                text-align: center;
+                text-align: right;
                 font-variant: small-caps;
-                border-style: solid;
-                border-color: rgb(54, 55, 58);
             }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                background-color:rgb(10, 10, 10);
+                padding: 5px;
+            }
+
+            .grid-item {
+                background-color:rgb(255, 255, 255);
+                border: 5px solid rgba(rgb(31, 26, 26), rgb(14, 15, 14), rgb(18, 18, 22), alpha);
+                padding: 20px;
+                font-size:30px;
+                text-align: center;
+            }
+            
         </style>
+        <!--Uses image in web app-->
         <img src="lewis.jpg" alt="lewis">
-        <h2>Software Engineering – 44000 ~ Syllabus: Fall Semester 2020</h2>
+        <!--Header-->
+        <h2>Software Engineering – 44000<br>Syllabus: Fall Semester 2020</h2>
+        <!--Paragraph-->
         <p><b>I. Instructor Information Instructor’s name: Eric Pogue</b><br><br>
              Lewis office location: AS-132-A<br>
              Office hours: MWF 1-2pm CT by appointment<br>
@@ -59,7 +75,53 @@
             How this course connects to the University Mission:
             This course will allow us to extend our knowledge in software development, provide us
             the foundation for lifelong learning in this domain, and provide us the opportunity to
-            assist each other on our learning journey.</p3>
+            assist each other on our learning journey.<br></p3>
+            <!--Specifies grid items within grid-->
+        <p4><b><br>VI. Course Schedule<br><br></b><div class="grid-container">
+                <div class="grid-item">1</div>
+                <div class="grid-item">Introduction to SaaS and Agile Development<br>
+                The Architecture of SaaS Applications<br> 
+                Getting Started with Git & GitHub<br>
+                Cloud Computing with Microsoft Azure</div>
+                <div class="grid-item">Chapter 1<br>Chapter 2<br>A.5 and A.6</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">Ruby Overview<br>
+                Getting Started with JavaScript<br>
+                Getting Started with Bootstrap<br>
+                Getting Started with Node.js</div>
+                <div class="grid-item">Chapter 3 and Chapter 4<br>
+                    Chapter 6</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">Behavior Driven Development<br>
+                    Plan and Document Requirements<br>
+                    Getting Started with Microsoft Azure and Node.js</div>
+                <div class="grid-item">Chapter 7</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">Testing and Test-Driven Development<br>
+                    HTML, CSS, JavaScript, and Bootstrap<br>
+                    Azure, Node.js, JavaScript, and Express</div>
+                <div class="grid-item">Chapter 8</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">Maintenance, Metrics, and Metrics<br>
+                    Agile Requirements & Saas Environment<br>
+                    Class Project – Sprint 1:</div>
+                <div class="grid-item">Chapter 9</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">Project Management & Scaled Agile<br>
+                    Serverless Computing<br>
+                    Class Project – Sprint 2</div>
+                <div class="grid-item">Chapter 10</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">Design Patterns<br>
+                    Software Architecture<br>
+                    Class Project – Sprint 3</div>
+                <div class="grid-item">Chapter 11</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">Performance, Releases, Reliability, and Security<br>
+                    More Software Architecture<br>
+                    Class Project – Sprint 4</div>
+                <div class="grid-item">Chaptyer 12</div>
+            </div></p4>
     </body>
 </html>
 
